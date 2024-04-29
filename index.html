@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная_Стрница</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js" type="module" defer></script>
+</head>
+<body>
+
+    <header class="fixed-header">
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/image.webp" alt="Логотип">
+            </div>
+        </a>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Найти на MarketMeld">
+        </div>
+            
+        <a href="/basket.html" class="basket">
+            <div class="basket__inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24">
+                        <path fill="red" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span class="basket__count">0</span>
+            </div>
+        </a>
+        <a class="home" href="index.html">
+            <svg width="45" height="45" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.98 1.984l7 6h-2.003v6H9.96V10.97H5.997v3.016H2.982v-6H.979l7-6z"></path>
+            </svg>
+        </a>
+    </header>
+    <div class="wrapper">
+        <div class="filter-buttons">
+            <button onclick="sortByPrice('asc')">Цена по возрастанию</button>
+            <button onclick="sortByPrice('desc')">Цена</button>
+            <button onclick="filterByShop()">Магазины</button>
+        </div>
+        <div class="cards"></div>
+        <button class="show-cards none">Показать еще</button>
+    </div>
+
+    <footer style="font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 10px 0;">
+       проектмечты@gmail.com
+    </footer>
+</body>
+</html>
